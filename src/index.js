@@ -4,6 +4,6 @@ const mockIt = './dist/mock.json';
 
 const cardsWrapper = document.querySelector('.cards-wrapper')
 const itCards = document.querySelector('.it-cards')
-
+console.log('scripts loaded')
 
 
