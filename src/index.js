@@ -1,5 +1,6 @@
 
 
+
 // const mockIt = './dist/mock.json';
 // "use strict";
 // const cardsWrapper = document.getElementById('cards')
@@ -23,6 +24,11 @@
 //     }
 // }
 // getPosts(url)
+
+const cardsWrapper = document.querySelector('.cards-wrapper')
+const itCards = document.querySelector('.it-cards')
+console.log('scripts loaded')
+
 
 window.addEventListener('scroll', function(){
     const logoImage = document.querySelector
