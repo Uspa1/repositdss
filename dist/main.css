@@ -16,13 +16,16 @@ header {
   font-size: 15px;
   transition: 0.4s;
 }
-#mainNav .logo img{
-    height:84px;
+#mainNav .logo img {
+    height:114px;
     transition: height 0.4s;
+    transform: translate(50%, -19%);
+    vertical-align: middle
+    
 }
 #mainNav ul {
   list-style: none;
-  display: flex;
+  transform: translate(-13%, 15%);
   justify-content: space-around;
   align-items: center;
   color: #333;
@@ -59,6 +62,7 @@ header {
   #mainNav .logo {
       height:72px;
       transition: height 0,4s;
+      
   }
  #links ul:nth-child(1) {
     grid-area:a
