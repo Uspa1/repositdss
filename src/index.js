@@ -37,14 +37,14 @@ window.addEventListener('scroll', function(){
     ('mainNav');
    
     if(window.pageYOffset >  0){
-        logoImage.style.height = "68px";
-       
+        logoImage.style.height = "100px";
         mainNav.classList.add('font-size')
     } else {
-        logoImage.style.height = "78px";
-        
+        logoImage.style.height = "114px";
         mainNav.classList.remove('font-size')
     }
     
+// фигурные скобки -- объект
+// квадратные скобки -- массивы
 
 });
