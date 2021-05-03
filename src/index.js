@@ -1,4 +1,4 @@
-
+import './scss/styles.scss'
 
 
 // const mockIt = './dist/mock.json';
@@ -30,21 +30,19 @@ const itCards = document.querySelector('.it-cards')
 console.log('scripts loaded')
 
 
-window.addEventListener('scroll', function(){
-    const logoImage = document.querySelector
-    ('.logo img');
-    const mainNav = document.getElementById
-    ('mainNav');
-   
-    if(window.pageYOffset >  0){
+window.addEventListener('scroll', function() {
+    const logoImage = document.querySelector('.logo img');
+    const mainNav = document.getElementById('mainNav');
+
+    if (window.pageYOffset > 0) {
         logoImage.style.height = "100px";
         mainNav.classList.add('font-size')
     } else {
         logoImage.style.height = "114px";
         mainNav.classList.remove('font-size')
     }
-    
-// фигурные скобки -- объект
-// квадратные скобки -- массивы
+
+    // фигурные скобки -- объект
+    // квадратные скобки -- массивы
 
 });
