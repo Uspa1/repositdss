@@ -1,4 +1,4 @@
-import './scss/styles.scss'
+import './scss/style.css'
 
 
 // const mockIt = './dist/mock.json';
