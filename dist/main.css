@@ -6,6 +6,16 @@
 }
   
 
+
+/* header */
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+  
+
+
 header {
   display: flex;
   position: relative;
@@ -15,7 +25,9 @@ header {
 
 
 
-.font-size a {
+
+.font-size li {
+
   font-size: 15px;
   transition: 0.4s;
 }
@@ -175,7 +187,6 @@ header {
     background-color: #CFD8DC;
     text-decoration: none;
   }
-
 
 
   #links ul {
@@ -515,9 +526,4 @@ header {
 
   
     
-       
-       
-    
 
-
- 
