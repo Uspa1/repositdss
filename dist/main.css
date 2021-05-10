@@ -25,7 +25,9 @@ header {
 
 
 
-
+html {
+  scroll-behavior: smooth;
+}
 .font-size li {
 
   font-size: 15px;
