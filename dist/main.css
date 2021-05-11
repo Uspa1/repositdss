@@ -134,7 +134,7 @@ i {
   position:relative;
     display: grid;
     grid-template-columns: 100%;
-    grid-gap: 20px;
+    grid-gap: 19px;
     align-items: stretch;
   }
   
