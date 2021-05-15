@@ -7,9 +7,8 @@ header {
 .social-share-btns-container {
     display: flex;
     padding: 25px;
-    position: absolute;
-    right: 0;
-    top: 0;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .logo h2 {
@@ -133,7 +132,7 @@ body {
    align-items: center;
   
 }
-#card-container {
+.card-container {
    display: flex;
  position: relative;
  margin: 30px;
@@ -144,29 +143,19 @@ body {
  perspective: 1000px;
 }
 
-#card, #card2, #card3 {
+.card {
  width: 100%;
  height: 100%;
  
  transform-style: preserve-3d;
- transition: all 0.8s linear;
+ transition: all 0.3s linear;
  box-shadow: 5px 5px 15px rgba(0, 0, 0, .3);
 }
-#card:hover {
+.card:hover {
  transform: rotateY(180deg);
  box-shadow: -5px 5px 15px rgba(0, 0, 0, .3);
 }
-#card2:hover {
- transform: rotateY(-180deg);
- box-shadow: -5px 5px 15px rgba(0, 0, 0, .3);
-}
-#card3:hover {
- transform: rotateX(180deg);
- box-shadow: 5px -5px 15px rgba(0, 0, 0, .3);
-}
-#card3 .back {
- transform: rotateX(-180deg);
-}
+
 .face {
  position: absolute;
  width: 100%;
@@ -252,54 +241,36 @@ color: black;
   }
 }
 
-  footer {
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-      background-color: white;
-      color: black ;
-      
-  }
-  #rt{
-  
-      position: relative;
-height: 100%;
-min-height: 100vh;
-text-align: center;
-  }
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 footer {
-    position: relative;
-    height: 300px;
+   
+   
     background-color: #333;
     color: #CFD8DC;
     font-family: 'Quicksand', sans-serif;
-    border-radius: 0px 0px 50px 50px;
+   
     }
     .copypaste {
-      transform: translate(0%, 150%);
+        display: flex;
+        justify-content:center;
+        margin-bottom: 200px;
+        padding-top:30px ;
+        line-height: 16px;
+        
     }
     .agitation {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      transform: translate(-240%, -20%); 
+        display: flex;
+        justify-content: center;
     }
-    
-    .social-share-btns-container {
+    .social-share-btns {
       display: flex;
-      padding: 25px;
-      position: absolute;
-      right: 0;
-      bottom: 0; }
-    
-   
-    
+      flex-wrap:wrap;
+      justify-content: center;
+      }
     i {
       margin-right: 5px; }
     
@@ -435,8 +406,12 @@ header {
     transform: translate(30%, -19%);
     vertical-align: middle
 }
-
-#mainNav ul {
+#mainNav ul,li {
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+}
+#mainNav a {
     list-style: none;
     transform: translate(-1%, 5%);
     justify-content: space-around;
@@ -445,8 +420,9 @@ header {
     cursor: pointer;
 }
 
-#mainNav li:hover {
+#mainNav a:hover {
     text-decoration: none;
+    list-style: none;
     color: rgb(0, 0, 0)
 }
 
