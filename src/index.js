@@ -1,9 +1,6 @@
 import './scss/style.css'
 
 
-
-
-
 window.addEventListener('scroll', function() {
     const logoImage = document.querySelector('.logo img');
     const mainNav = document.getElementById('mainNav');
@@ -177,3 +174,19 @@ showTime();
 setBgGreet();
 getName();
 getFocus();
+
+
+let img = document.querySelector(".face");
+let magic = document.querySelector(".card2")
+
+img.addEventListener("mouseout",function(e){
+  
+  e.target.classList.remove("back");
+  e.target.classList.remove("front")
+  e.target.classList.add("back-out");
+  alet
+  
+});
+// magic.addEventListener("mouseout",function(){
+  // magic.classList.remove("main");
+// });
