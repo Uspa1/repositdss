@@ -185,12 +185,12 @@ fetch('./../dist/mock.json')
 })
 .then (data =>{
     let div = document.getElementById('section-3');
-    div.className = "card";
+
    // for (const key of Object.keys(data)) {
 
         //div.innerHTML += '<p>' + key + '</p>'
     //     console.log(key);
-      console.log(div)
+
         data.cardsIT.forEach((element) => {
           
       
