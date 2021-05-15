@@ -176,18 +176,6 @@ getName();
 getFocus();
 
 
-let img = document.querySelector(".face");
-let magic = document.querySelector(".card2")
-
-img.addEventListener("mouseout",function(e){
-  
-  e.target.classList.remove("back");
-  e.target.classList.remove("front")
-  e.target.classList.add("back-out");
-  alet
-  
-});
-
 fetch('./../dist/mock.json')
 .then(data => {
     
@@ -202,7 +190,7 @@ fetch('./../dist/mock.json')
 
         //div.innerHTML += '<p>' + key + '</p>'
     //     console.log(key);
- 
+      console.log(div)
         data.cardsIT.forEach((element) => {
           
       
