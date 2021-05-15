@@ -187,6 +187,76 @@ img.addEventListener("mouseout",function(e){
   alet
   
 });
-// magic.addEventListener("mouseout",function(){
-  // magic.classList.remove("main");
-// });
+
+fetch('./../dist/mock.json')
+.then(data => {
+    
+    console.log(data);
+ 
+    return data.json()
+})
+.then (data =>{
+    let div = document.getElementById('section-3');
+    div.className = "card";
+   // for (const key of Object.keys(data)) {
+
+        //div.innerHTML += '<p>' + key + '</p>'
+    //     console.log(key);
+ 
+        data.cardsIT.forEach((element) => {
+          
+      
+           div.innerHTML+= `<div id="card-container">
+    
+           <div id="card">
+           <div class="front face">
+             
+           </div>
+           <div class="back face">
+             <h1>${element['name']}</h1>
+             <p class="artist">Predskazanie</p>
+             
+           </div>
+         </div>  
+       </div>`
+        }); 
+   data.cardsItJoke.forEach((element) => {
+    div.innerHTML+= `<div id="card-container">
+    
+    <div id="card">
+    <div class="front face">
+      
+    </div>
+    <div class="back face">
+      <h1>${element['name']}</h1>
+      <p class="artist">Predskazanie</p>
+      
+    </div>
+  </div>  
+</div>`
+ 
+   });
+   data.cardsItUseful.forEach((element) => {
+    div.innerHTML+= `<div id="card-container">
+    
+    <div id="card">
+    <div class="front face">
+      
+    </div>
+    <div class="back face">
+      <h1>${element['name']}</h1>
+      <p class="artist">Predskazanie</p>
+      
+    </div>
+  </div>  
+</div>`
+ 
+   });
+   // };
+    document.body.append(div);
+   // console.log(data);
+    //console.log(data.cardsIT);
+   //console.log(data.cardsItJoke);
+//  ...
+})
+

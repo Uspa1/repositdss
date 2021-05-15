@@ -206,7 +206,7 @@
     "fast-json-stable-stringify" "^2.0.0"
     "json-schema-traverse" "^0.3.0"
 
-"ajv@^6.12.5", "ajv@^6.9.1":
+"ajv@^6.12.5":
   "integrity" "sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g=="
   "resolved" "https://registry.npmjs.org/ajv/-/ajv-6.12.6.tgz"
   "version" "6.12.6"
@@ -778,7 +778,7 @@
   "resolved" "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-4.1.0.tgz"
   "version" "4.1.0"
 
-"postcss@^8.1.0", "postcss@^8.2.8":
+"postcss@^8.2.8":
   "integrity" "sha512-b/h7CPV7QEdrqIxtAf2j31U5ef05uBDuvoXv6L51Q4rcS1jdlXAVKJv+atCFdUXYl9dyTHGyoMzIepwowRJjFw=="
   "resolved" "https://registry.npmjs.org/postcss/-/postcss-8.2.10.tgz"
   "version" "8.2.10"
@@ -989,7 +989,7 @@
     "glob-to-regexp" "^0.4.1"
     "graceful-fs" "^4.1.2"
 
-"webpack-cli@^4.2.0", "webpack-cli@4.x.x":
+"webpack-cli@^4.2.0":
   "integrity" "sha512-9YV+qTcGMjQFiY7Nb1kmnupvb1x40lfpj8pwdO/bom+sQiP4OBMKjHq29YQrlDWDPZO9r/qWaRRywKaRDKqBTA=="
   "resolved" "https://registry.npmjs.org/webpack-cli/-/webpack-cli-4.6.0.tgz"
   "version" "4.6.0"
@@ -1033,7 +1033,7 @@
     "source-list-map" "^2.0.1"
     "source-map" "^0.6.1"
 
-"webpack@^3.1.0", "webpack@^4.0.0 || ^5.0.0", "webpack@^4.27.0 || ^5.0.0", "webpack@^4.4.0 || ^5.0.0", "webpack@^5.1.0", "webpack@^5.11.0", "webpack@4.x.x || 5.x.x":
+"webpack@^5.11.0":
   "integrity" "sha512-jB9PrNMFnPRiZGnm/j3qfNqJmP3ViRzkuQMIf8za0dgOYvSLi/cgA+UEEGvik9EQHX1KYyGng5PgBTTzGrH9xg=="
   "resolved" "https://registry.npmjs.org/webpack/-/webpack-5.32.0.tgz"
   "version" "5.32.0"
