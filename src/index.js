@@ -9,7 +9,6 @@ import './scss/style.css';
 
 
 
-
 window.addEventListener('scroll', function() {
     const logoImage = document.querySelector('.logo img');
     const mainNav = document.getElementById('mainNav');
@@ -188,7 +187,6 @@ getName();
 getFocus();
 
 
-
 const cbox = document.querySelectorAll(".card");
 
 let count =0;
@@ -220,75 +218,74 @@ let count =0;
  }
  
 
-fetch("https://uspa1.github.io/repositdss/mock.json")
-.then(data => {
+// fetch("https://uspa1.github.io/repositdss/mock.json”))
+// .then(data => {
     
-    console.log(data);
+//     console.log(data);
  
-    return data.json()
-})
-.then (data =>{
-    let div = document.getElementById('section-3');
-    
-   // for (const key of Object.keys(data)) {
+//     return data.json()
+// })
+// .then (data =>{
+//     let div = document.getElementById('section-3');
+//     
+//    // for (const key of Object.keys(data)) {
 
-        //div.innerHTML += '<p>' + key + '</p>'
-    //     console.log(key);
+//         //div.innerHTML += '<p>' + key + '</p>'
+//     //     console.log(key);
  
-        data.cardsIT.forEach((element) => {
+//         data.cardsIT.forEach((element) => {
           
       
-           div.innerHTML+= `<div id="card-container">
+//            div.innerHTML+= `<div id="card-container">
     
-           <div id="card">
-           <div class="front face">
+//            <div id="card">
+//            <div class="front face">
              
-           </div>
-           <div class="back face">
-             <h1>${element['name']}</h1>
-             <p class="artist">Predskazanie</p>
+//            </div>
+//            <div class="back face">
+//              <h1>${element['name']}</h1>
+//              <p class="artist">Predskazanie</p>
              
-           </div>
-         </div>  
-       </div>`
-        }); 
-   data.cardsItJoke.forEach((element) => {
-    div.innerHTML+= `<div id="card-container">
+//            </div>
+//          </div>  
+//        </div>`
+//         }); 
+//    data.cardsItJoke.forEach((element) => {
+//     div.innerHTML+= `<div id="card-container">
     
-    <div id="card">
-    <div class="front face">
+//     <div id="card">
+//     <div class="front face">
       
-    </div>
-    <div class="back face">
-      <h1>${element['name']}</h1>
-      <p class="artist">Predskazanie</p>
+//     </div>
+//     <div class="back face">
+//       <h1>${element['name']}</h1>
+//       <p class="artist">Predskazanie</p>
       
-    </div>
-  </div>  
-</div>`
+//     </div>
+//   </div>  
+// </div>`
  
-   });
-   data.cardsItUseful.forEach((element) => {
-    div.innerHTML+= `<div id="card-container">
+//    });
+//    data.cardsItUseful.forEach((element) => {
+//     div.innerHTML+= `<div id="card-container">
     
-    <div id="card">
-    <div class="front face">
+//     <div id="card">
+//     <div class="front face">
       
-    </div>
-    <div class="back face">
-      <h1>${element['name']}</h1>
-      <p class="artist">Predskazanie</p>
+//     </div>
+//     <div class="back face">
+//       <h1>${element['name']}</h1>
+//       <p class="artist">Predskazanie</p>
       
-    </div>
-  </div>  
-</div>`
+//     </div>
+//   </div>  
+// </div>`
  
-   });
-   // };
-    document.body.append(div);
-   // console.log(data);
-    //console.log(data.cardsIT);
-   //console.log(data.cardsItJoke);
-//  ...
-})
-
+//    });
+//    // };
+//     document.body.append(div);
+//    // console.log(data);
+//     //console.log(data.cardsIT);
+//    //console.log(data.cardsItJoke);
+// //  ...
+// })
