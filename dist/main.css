@@ -6,7 +6,12 @@ header {
 
 .social-share-btns-container {
     display: flex;
+
     
+
+    padding: 25px;
+    flex-wrap: wrap;
+
     justify-content: center;
 }
 
@@ -142,10 +147,14 @@ body {
  
  perspective: 1000px;
 }
+
 .assist {
     display: flex;
     justify-content: center;
 }
+
+
+
 .card {
  width: 100%;
  height: 100%;
@@ -154,10 +163,12 @@ body {
  transition: all 0.3s linear;
  box-shadow: 5px 5px 15px rgba(0, 0, 0, .3);
 }
+
 .cardhover:hover {
  transform: rotateY(180deg);
  
 }
+
 .face {
  position: absolute;
  width: 100%;
@@ -250,6 +261,7 @@ color: black;
 }
 
 
+
   #rt{
 position: relative;
 height: 100%;
@@ -257,17 +269,19 @@ height: 100%;
 text-align: center;
   }
 
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 footer {
-    position: relative;
-    height: 300px;
+   
+   
     background-color: #333;
     color: #CFD8DC;
     font-family: 'Quicksand', sans-serif;
+
     
     }
     .copypaste {
@@ -290,6 +304,7 @@ footer {
     
    
     
+
     i {
       margin-right: 5px; }
     
@@ -347,12 +362,16 @@ header {
     transform: translate(30%, -19%);
     vertical-align: middle
 }
-#mainNav a {
-    text-decoration: none;
-    color: rgb(34, 31, 31)
-}
 
-#mainNav ul {
+
+
+#mainNav ul,li {
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+}
+#mainNav a {
+
     list-style: none;
     transform: translate(-1%, 5%);
     justify-content: space-around;
@@ -363,6 +382,7 @@ header {
 
 #mainNav a:hover {
     text-decoration: none;
+    list-style: none;
     color: rgb(0, 0, 0)
 }
 
