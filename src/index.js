@@ -1,6 +1,11 @@
-import './scss/style.css'
 
 
+
+
+
+
+
+import './scss/style.css';
 
 
 
@@ -26,6 +31,7 @@ const itCards = document.querySelector('.it-cards');
 console.log('scripts loaded');
 
 
+
 window.addEventListener('scroll', function() {
     const logoImage = document.querySelector('.logo img');
     const mainNav = document.getElementById('mainNav');
@@ -35,7 +41,9 @@ window.addEventListener('scroll', function() {
         mainNav.classList.add('font-size')
     } else {
         logoImage.style.height = "114px";
-        mainNav.classList.remove('font-size')
+        mainNav.classList.remove('font-size');
+        
+
     }
     
     
@@ -177,3 +185,107 @@ showTime();
 setBgGreet();
 getName();
 getFocus();
+
+
+const cbox = document.querySelectorAll(".card");
+
+let count =0;
+
+ for (let i = 0; i < cbox.length; i++) {
+
+     cbox[i].addEventListener("mouseout", function() {
+      count++;
+     
+		if(count <=1) {
+         cbox[i].classList.add("active");
+   
+    }
+  
+     });
+
+ }
+ for (let i = 0; i < cbox.length; i++) {
+
+     cbox[i].addEventListener("mouseover", function() {
+     
+		if(count >1) {
+         cbox[i].classList.remove("cardhover");
+   
+    }
+  
+     });
+
+ }
+ 
+
+// fetch("https://uspa1.github.io/repositdss/mock.json”))
+// .then(data => {
+    
+//     console.log(data);
+ 
+//     return data.json()
+// })
+// .then (data =>{
+//     let div = document.getElementById('section-3');
+//     
+//    // for (const key of Object.keys(data)) {
+
+//         //div.innerHTML += '<p>' + key + '</p>'
+//     //     console.log(key);
+ 
+//         data.cardsIT.forEach((element) => {
+          
+      
+//            div.innerHTML+= `<div id="card-container">
+    
+//            <div id="card">
+//            <div class="front face">
+             
+//            </div>
+//            <div class="back face">
+//              <h1>${element['name']}</h1>
+//              <p class="artist">Predskazanie</p>
+             
+//            </div>
+//          </div>  
+//        </div>`
+//         }); 
+//    data.cardsItJoke.forEach((element) => {
+//     div.innerHTML+= `<div id="card-container">
+    
+//     <div id="card">
+//     <div class="front face">
+      
+//     </div>
+//     <div class="back face">
+//       <h1>${element['name']}</h1>
+//       <p class="artist">Predskazanie</p>
+      
+//     </div>
+//   </div>  
+// </div>`
+ 
+//    });
+//    data.cardsItUseful.forEach((element) => {
+//     div.innerHTML+= `<div id="card-container">
+    
+//     <div id="card">
+//     <div class="front face">
+      
+//     </div>
+//     <div class="back face">
+//       <h1>${element['name']}</h1>
+//       <p class="artist">Predskazanie</p>
+      
+//     </div>
+//   </div>  
+// </div>`
+ 
+//    });
+//    // };
+//     document.body.append(div);
+//    // console.log(data);
+//     //console.log(data.cardsIT);
+//    //console.log(data.cardsItJoke);
+// //  ...
+// })

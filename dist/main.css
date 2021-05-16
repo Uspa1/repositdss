@@ -6,10 +6,8 @@ header {
 
 .social-share-btns-container {
     display: flex;
-    padding: 25px;
-    position: absolute;
-    right: 0;
-    top: 0;
+    
+    justify-content: center;
 }
 
 .logo h2 {
@@ -120,6 +118,7 @@ i {
 }
 html {
  min-height: 100%;
+ scroll-behavior: smooth;
 }
 body {
  background-color:white;
@@ -133,7 +132,7 @@ body {
    align-items: center;
   
 }
-#card-container {
+.card-container {
    display: flex;
  position: relative;
  margin: 30px;
@@ -143,35 +142,33 @@ body {
  
  perspective: 1000px;
 }
-
-#card, #card2, #card3 {
+.assist {
+    display: flex;
+    justify-content: center;
+}
+.card {
  width: 100%;
  height: 100%;
  
  transform-style: preserve-3d;
- transition: all 0.8s linear;
+ transition: all 0.3s linear;
  box-shadow: 5px 5px 15px rgba(0, 0, 0, .3);
 }
-#card:hover {
+.cardhover:hover {
  transform: rotateY(180deg);
- box-shadow: -5px 5px 15px rgba(0, 0, 0, .3);
-}
-#card2:hover {
- transform: rotateY(-180deg);
- box-shadow: -5px 5px 15px rgba(0, 0, 0, .3);
-}
-#card3:hover {
- transform: rotateX(180deg);
- box-shadow: 5px -5px 15px rgba(0, 0, 0, .3);
-}
-#card3 .back {
- transform: rotateX(-180deg);
+ 
 }
 .face {
  position: absolute;
  width: 100%;
  height: 100%;
  backface-visibility: hidden;
+}
+.active {
+ display: block;
+ transform: rotateY(180deg);
+ text-align: center;
+ background: #f9f3e4;
 }
 .back {
  display: block;
@@ -252,19 +249,11 @@ color: black;
   }
 }
 
-  footer {
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-      background-color: white;
-      color: black ;
-      
-  }
+
   #rt{
-  
-      position: relative;
+position: relative;
 height: 100%;
-min-height: 100vh;
+
 text-align: center;
   }
 
@@ -279,109 +268,32 @@ footer {
     background-color: #333;
     color: #CFD8DC;
     font-family: 'Quicksand', sans-serif;
-    border-radius: 0px 0px 50px 50px;
+    
     }
     .copypaste {
       transform: translate(0%, 150%);
+    
+      padding-bottom: 10px;
     }
     .agitation {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      transform: translate(-240%, -20%); 
+        padding-top: 50px;
+      transform: translate(-0%, 0%); 
     }
     
-    .social-share-btns-container {
+    .social-share-btns {
       display: flex;
-      padding: 25px;
-      position: absolute;
-      right: 0;
-      bottom: 0; }
+     
+      flex-wrap: wrap;
+      padding-top: 40px;
+      justify-content: center;
+      }
     
    
     
     i {
       margin-right: 5px; }
     
-    .share-btn-twitter {
-      transition: background-color 0.5s ease;
-      margin: 0 5px;
-      padding: 8px 16px;
-      border-radius: 3px;
-      color: #fff;
-      font-size: 14px;
-      line-height: 18px;
-      vertical-align: middle;
-      background-color: #1e87f0; }
-    
-    .share-btn-twitter:hover {
-      text-decoration: none;
-      color: #fff;
-      background-color: #1d78d3; }
-    
-    .share-btn-facebook {
-      transition: background-color 0.5s ease;
-      margin: 0 5px;
-      padding: 8px 16px;
-      border-radius: 3px;
-      color: #fff;
-      font-size: 14px;
-      line-height: 18px;
-      vertical-align: middle;
-      background-color: #37518b; }
-    
-    .share-btn-facebook:hover {
-      text-decoration: none;
-      color: #fff;
-      background-color: #293f70; }
-    
-    .share-btn-linkedin {
-      transition: background-color 0.5s ease;
-      margin: 0 5px;
-      padding: 8px 16px;
-      border-radius: 3px;
-      color: #fff;
-      font-size: 14px;
-      line-height: 18px;
-      vertical-align: middle;
-      background-color: #007bb6; }
-    
-    .share-btn-linkedin:hover {
-      text-decoration: none;
-      color: #fff;
-      background-color: #066b99; }
-    
-    .share-btn-reddit {
-      transition: background-color 0.5s ease;
-      margin: 0 5px;
-      padding: 8px 16px;
-      border-radius: 3px;
-      color: #fff;
-      font-size: 14px;
-      line-height: 18px;
-      vertical-align: middle;
-      background-color: #ED001C; }
-    
-    .share-btn-reddit:hover {
-      text-decoration: none;
-      color: #fff;
-      background-color: #d30920; }
-    
-    .share-btn-mail {
-      transition: background-color 0.5s ease;
-      margin: 0 5px;
-      padding: 8px 16px;
-      border-radius: 3px;
-      color: #fff;
-      font-size: 14px;
-      line-height: 18px;
-      vertical-align: middle;
-      background-color: #f1c40f; }
-    
-    .share-btn-mail:hover {
-      text-decoration: none;
-      color: #fff;
-      background-color: #ddb410; }
+   
   
      /* footer */
   
@@ -435,6 +347,10 @@ header {
     transform: translate(30%, -19%);
     vertical-align: middle
 }
+#mainNav a {
+    text-decoration: none;
+    color: rgb(34, 31, 31)
+}
 
 #mainNav ul {
     list-style: none;
@@ -445,7 +361,7 @@ header {
     cursor: pointer;
 }
 
-#mainNav li:hover {
+#mainNav a:hover {
     text-decoration: none;
     color: rgb(0, 0, 0)
 }
