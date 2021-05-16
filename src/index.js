@@ -176,9 +176,38 @@ getName();
 getFocus();
 
 
-fetch('./../dist/mock.json')
-.then(data => {
+const cbox = document.querySelectorAll(".card");
+
+let count =0;
+
+ for (let i = 0; i < cbox.length; i++) {
+
+     cbox[i].addEventListener("mouseout", function() {
+      count++;
+
+        if(count <=1) {
+         cbox[i].classList.add("active");
+
+    }
+
+     });
+
+ }
+ for (let i = 0; i < cbox.length; i++) {
+
+     cbox[i].addEventListener("mouseover", function() {
+
+        if(count >1) {
+         cbox[i].classList.remove("cardhover");
+
+    }
+
+     });
+    }
     
+    fetch("https://uspa1.github.io/repositdss/mock.json")
+.then(data => {
+
     console.log(data);
  
     return data.json()
@@ -190,11 +219,11 @@ fetch('./../dist/mock.json')
 
         //div.innerHTML += '<p>' + key + '</p>'
     //     console.log(key);
-
+ 
         data.cardsIT.forEach((element) => {
-          
-      
-           div.innerHTML+= `<div id="card-container">
+
+
+           div.innerHTML+= <div id="card-container">
     
            <div id="card">
            <div class="front face">
@@ -206,10 +235,10 @@ fetch('./../dist/mock.json')
              
            </div>
          </div>  
-       </div>`
+       </div>
         }); 
    data.cardsItJoke.forEach((element) => {
-    div.innerHTML+= `<div id="card-container">
+    div.innerHTML+= <div id="card-container">
     
     <div id="card">
     <div class="front face">
@@ -221,11 +250,11 @@ fetch('./../dist/mock.json')
       
     </div>
   </div>  
-</div>`
+</div>
  
    });
    data.cardsItUseful.forEach((element) => {
-    div.innerHTML+= `<div id="card-container">
+    div.innerHTML+= <div id="card-container">
     
     <div id="card">
     <div class="front face">
@@ -237,7 +266,7 @@ fetch('./../dist/mock.json')
       
     </div>
   </div>  
-</div>`
+</div>
  
    });
    // };
@@ -248,3 +277,5 @@ fetch('./../dist/mock.json')
 //  ...
 })
 
+
+     
