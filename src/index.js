@@ -203,6 +203,8 @@ for (let i = 0; i < cbox.length; i++) {
 
     });
 }
+//card section
+
 
 fetch("https://uspa1.github.io/repositdss/mock/mock.json")
     .then(data => {
@@ -264,6 +266,15 @@ fetch("https://uspa1.github.io/repositdss/mock/mock.json")
         });
 
 
+    }).then(()=> {
+        const card = document.querySelectorAll(".card");
+    console.log(card.length)
+ for (let i = 0; i < card.length; i++) {
+    card[i].addEventListener("click", function() {
+        this.classList.add('active')
+
+     });
+ }
     })
 
 
