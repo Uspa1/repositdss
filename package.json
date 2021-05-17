@@ -7,8 +7,8 @@
     "build": "webpack",
     "start": "webpack --watch",
     "dev": " webpack --mode development --watch",
-    "serve": "webpack serve --mode development --hot --open",
-    "deploy": "cd dist && git add --all && git commit -m \"Release at $(date)\" && git push"
+    "serve": "webpack serve --mode development --hot --open"
+
   },
   "author": "",
   "license": "ISC",

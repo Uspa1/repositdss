@@ -14,7 +14,7 @@ module.exports = {
         inline: true,
         host: '0.0.0.0',
         port: 3002,
-        contentBase: path.resolve(__dirname, 'dist'),
+        contentBase: path.resolve(__dirname),
         watchOptions: {
             poll: true
         },
