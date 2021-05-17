@@ -9,17 +9,7 @@ module.exports = {
 
     },
     plugins: [new MiniCssExtractPlugin()],
-    devServer: {
-        hot: true,
-        inline: true,
-        host: '0.0.0.0',
-        port: 3002,
-        contentBase: path.resolve(__dirname),
-        watchOptions: {
-            poll: true
-        },
-        watchContentBase: true
-      },
+
     module: {
         rules: [
             { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
