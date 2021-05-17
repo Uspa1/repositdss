@@ -16,7 +16,7 @@ window.addEventListener('scroll', function () {
     // квадратные скобки -- массивы
 
 });
-
+alert(2)
 const cardsWrapper = document.querySelector('.cards-wrapper');
 const itCards = document.querySelector('.it-cards');
 console.log('scripts loaded');
