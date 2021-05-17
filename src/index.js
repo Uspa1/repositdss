@@ -215,11 +215,7 @@ let count =0;
 .then (data =>{
     let div = document.getElementById('section-3');
 
-   // for (const key of Object.keys(data)) {
 
-        //div.innerHTML += '<p>' + key + '</p>'
-    //     console.log(key);
- 
         data.cardsIT.forEach((element) => {
 
 
@@ -269,12 +265,10 @@ let count =0;
 </div>
  
    });
-   // };
+
     document.body.append(div);
-   // console.log(data);
-    //console.log(data.cardsIT);
-   //console.log(data.cardsItJoke);
-//  ...
+
+
 })
 
 
