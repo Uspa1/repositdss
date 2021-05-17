@@ -1,6 +1,5 @@
 import './scss/style.css'
 
-
 window.addEventListener('scroll', function () {
     const logoImage = document.querySelector('.logo img');
     const mainNav = document.getElementById('mainNav');
@@ -219,7 +218,7 @@ fetch("https://uspa1.github.io/repositdss/mock/mock.json")
         data.cardsIT.forEach((element) => {
 
 
-            div.innerHTML += `<div id="card-container"><div id="card">
+            div.innerHTML += `<div class="card-container"><div class="card">
            <div class="front face">
              
            </div>
@@ -232,9 +231,9 @@ fetch("https://uspa1.github.io/repositdss/mock/mock.json")
        </div>`
         });
         data.cardsItJoke.forEach((element) => {
-            div.innerHTML += `<div id="card-container">
+            div.innerHTML += `<div class="card-container">
 
-                <div id="card">
+                <div class="card">
                     <div class="front face">
 
                     </div>
@@ -248,9 +247,9 @@ fetch("https://uspa1.github.io/repositdss/mock/mock.json")
 
         });
         data.cardsItUseful.forEach((element) => {
-                div.innerHTML +=` <div id="card-container">
+                div.innerHTML +=` <div class="card-container">
 
-                    <div id="card">
+                    <div class="card">
                         <div class="front face">
 
                         </div>
@@ -263,8 +262,6 @@ fetch("https://uspa1.github.io/repositdss/mock/mock.json")
                 </div>`
 
         });
-
-        document.body.append(div);
 
 
     })
