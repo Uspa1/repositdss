@@ -205,7 +205,7 @@ let count =0;
      });
     }
     
-    fetch("https://uspa1.github.io/repositdss/mock.json")
+    fetch("https://uspa1.github.io/repositdss/mock/mock.json")
 .then(data => {
 
     console.log(data);
