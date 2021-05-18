@@ -175,34 +175,7 @@ getName();
 getFocus();
 
 
-const cbox = document.querySelectorAll(".card");
 
-let count = 0;
-
-for (let i = 0; i < cbox.length; i++) {
-
-    cbox[i].addEventListener("mouseout", function () {
-        count++;
-
-        if (count <= 1) {
-            cbox[i].classList.add("active");
-
-        }
-
-    });
-
-}
-for (let i = 0; i < cbox.length; i++) {
-
-    cbox[i].addEventListener("mouseover", function () {
-
-        if (count > 1) {
-            cbox[i].classList.remove("cardhover");
-
-        }
-
-    });
-}
 //card section
 
 
@@ -268,13 +241,21 @@ fetch("https://uspa1.github.io/repositdss/mock/mock.json")
 
     }).then(()=> {
         const card = document.querySelectorAll(".card");
+
+        let count = 6;
+
     console.log(card.length)
  for (let i = 0; i < card.length; i++) {
-    card[i].addEventListener("click", function() {
+    card[i].addEventListener("click", function () {
+        count++;
+
+        if (count <= 1) {
         this.classList.add('active')
+    }
 
      });
  }
+ 
     })
 
 
