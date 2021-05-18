@@ -242,7 +242,7 @@ fetch("https://uspa1.github.io/repositdss/mock/mock.json")
     }).then(()=> {
         const card = document.querySelectorAll(".card");
 
-        let count = 6;
+        let count = 0;
 
     console.log(card.length)
  for (let i = 0; i < card.length; i++) {
