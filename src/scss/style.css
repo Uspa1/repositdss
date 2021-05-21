@@ -58,6 +58,7 @@ backface-visibility: hidden;
     content: ""; 
   }
  
+
 .card-container {
     display: flex;
     position: relative;
@@ -85,6 +86,7 @@ backface-visibility: hidden;
     transition: all 0.3s linear;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, .3);
 }
+
 
  .card.flip {
     transform: rotateY(180deg);

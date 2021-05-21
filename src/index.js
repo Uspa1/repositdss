@@ -167,34 +167,9 @@ getName();
 getFocus();
 
 
-const cbox = document.querySelectorAll(".card");
 
-let count = 0;
+//card section
 
-for (let i = 0; i < cbox.length; i++) {
-
-    cbox[i].addEventListener("mouseout", function () {
-        count++;
-
-        if (count <= 1) {
-            cbox[i].classList.add("active");
-
-        }
-
-    });
-
-}
-for (let i = 0; i < cbox.length; i++) {
-
-    cbox[i].addEventListener("mouseover", function () {
-
-        if (count > 1) {
-            cbox[i].classList.remove("cardhover");
-
-        }
-
-    });
-}
 
 // fetch("https://uspa1.github.io/repositdss/mock/mock.json")
 //     .then(data => {
@@ -330,6 +305,7 @@ for (let i = 0; i < cbox.length; i++) {
                 <img src = "${item.imgBack}"> 
                 
                 </div>`
+
             }
         })
     
@@ -372,6 +348,7 @@ for (let i = 0; i < cbox.length; i++) {
         document.querySelectorAll('.btn ').forEach((box, index) => {
             box.setAttribute('disabled', false)
         })
+ 
     })
     let myInterval = function () {
         setInterval(() => {
@@ -410,4 +387,3 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
  })
 
- 
