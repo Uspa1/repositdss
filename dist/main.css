@@ -5,7 +5,9 @@ header {
     z-index:15;
     top: 0;
 }
-
+element.style {
+    black
+}
 .social-share-btns-container {
     display: flex;
     padding: 25px;
