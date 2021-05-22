@@ -6,7 +6,7 @@ header {
     top: 0;
 }
 element.style {
-    black
+    color:black
 }
 .social-share-btns-container {
     display: flex;
