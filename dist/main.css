@@ -5,6 +5,9 @@ header {
     z-index:15;
     top: 0;
 }
+body {
+color:black
+}
 
 .social-share-btns-container {
     display: flex;
