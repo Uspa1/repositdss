@@ -257,8 +257,8 @@ getFocus();
         document.querySelectorAll('.btn').forEach((box, index) => {
     
             box.addEventListener("click", function () {
-                document.cookie = "active=true; max-age=20";
-                myInterval()
+              
+                
                 switch (index) {
                     case 0:
                         //render first cards
@@ -310,6 +310,15 @@ getFocus();
         })
     
     }
+    function sayHi() {
+        localStorage.clear();
+        location.reload();
+        
+        } 
+ 
+    
+      
+     
     
     function checkCard() {
     
@@ -324,7 +333,9 @@ getFocus();
                     })
                 }
                 else {
-                    alert('карта уже открыта, карты будут доступны спустя 20 секунд')
+                    alert('карта уже открыта, карты будут доступны спустя 20 секунд');
+                    setTimeout(sayHi, 20000);
+
                 }
             })
         )
